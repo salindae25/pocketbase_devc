@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  # redis:
+  #   image: redis
+  #   ports:
+  #     - "6379:6379"
+  backend:
+    build: .
+    container_name: go_poc_backend
+    volumes:
+      - .:/go/src/poc
+      - ../go-te/:/go/src/te
+    ports:
+      - "8090:8090"
+      - 8089:8089
+    expose:
+      - "8090"
+      - 8089
