@@ -1,6 +1,7 @@
 ## Pocketbase as framework DevContainer
 
-Dockerize pocketbase as framework dev container.
+Dockerize pocketbase as framework. Inspired by the VS code Dev Container. This would help us isolate the
+golang development environment
 
 ### Setup
 
